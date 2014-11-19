@@ -8,13 +8,13 @@ Answer: Vauxhall
 FRD
 Answer: Ford
 
-LPHRM
+LP HRM
 Answer: Alpha Romeo
 
 Then the next category might be TV shows:
 STNDRS
 Answer: EastEnders
 
-And so on.
+And so on. You'll notice that the third car, Alpha Romeo, hsa a space in the name, the number of spaces in the answer are preserved however they do not appear in the same position as you would expect to find them in the full name.
 
 For details of the motivation behind the project please see my blog post here:
