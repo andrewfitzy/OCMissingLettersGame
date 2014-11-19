@@ -20,6 +20,5 @@ public class WordProcessorTest {
 		for(int i = 0;i < inwords.length;i++) {
 			assertEquals(outwords[i], WordProcessor.processWord(inwords[i]));
 		}
-		
 	}
 }
