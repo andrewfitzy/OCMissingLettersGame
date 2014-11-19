@@ -30,7 +30,7 @@ public class WordProcessor {
 			//count number of spaces
 			if(' ' == character) {
 				spaceCount++;
-			} else if(!isVowel(character) || isLetter(character)) { //remove all vowels
+			} else if(!isVowel(character) && isLetter(character)) { //remove all vowels
 				//append to result
 				result.append(character);
 			}
@@ -78,10 +78,9 @@ public class WordProcessor {
 	private static Boolean isLetter(char character) {
 		//check character value range for uppercase letters
 		Boolean isLetter = Boolean.FALSE;
-		//evaluate in order of character popularity: http://en.wikipedia.org/wiki/Letter_frequency
-		//if('E' == character || 'A' == character || 'O' == character || 'I' == character || 'U' == character) {
-		//	isLetter = Boolean.TRUE;
-		//}
+		if(character >= 'A' && character <= 'Z') {
+			isLetter = Boolean.TRUE;
+		}
 		return isLetter;
 	}
 }
